@@ -1,0 +1,23 @@
+@import "../mixin/mixin";
+
+.banner {
+  padding-top: 10rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  @include flex(center);
+
+  &__header {
+    font-weight: 700;
+    font-size: 6rem;
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    max-width: 70rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    
+  }
+
+}

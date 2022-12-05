@@ -1,0 +1,89 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  padding-bottom: 20rem;
+}
+
+a,
+body {
+  color: $text-color;
+  // min-width: 1000px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1210px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+}
+
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem 3rem;
+  // display: inline-block;
+
+  &--border{
+      border: 1px solid currentColor;
+  }
+
+  &--rounded{
+    border-radius: 5rem;
+      -webkit-border-radius: 5rem;
+      -moz-border-radius: 5rem;
+      -ms-border-radius: 5rem;
+      -o-border-radius: 5rem;
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    &.has-shadow{
+        box-shadow: 0 10px 35px -5px $primary-color;
+    }
+  }
+}
+
+
+.text-clamp{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &--2{
+    @extend .text-clamp;
+    -webkit-line-clamp: 2;
+  }
+}

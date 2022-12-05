@@ -1,0 +1,56 @@
+@import "../mixin/mixin";
+
+.header {
+    padding-top: 4rem;
+    &__inner {
+        @include flex(center, space-between);
+    }
+    &__menu {
+        &-list {
+            // @include flex(center);
+            @include flex(center)
+        }
+
+        &-item {
+            margin-left: 5rem;
+            &:last-child {
+                margin-left: 7rem;
+            }
+        }
+
+        &-link {
+            font-size: 1.6rem;
+            transition: color 0.25s linear, border linear;
+            -webkit-transition: color 0.25s linear, border linear;
+            -moz-transition: color 0.25s linear, border linear;
+            -ms-transition: color 0.25s linear, border linear;
+            -o-transition: color 0.25s linear, border linear;
+            &:hover
+             {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__login {
+        padding: 1.5rem 2.5rem;
+        border: 1px solid;
+        display: inline-block;
+        border-radius: 2.5rem;
+        -webkit-border-radius: 2.5rem;
+        -moz-border-radius: 2.5rem;
+        -ms-border-radius: 2.5rem;
+        -o-border-radius: 2.5rem;
+    }
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $text-color;
+    &__text {
+        color: $primary-color;
+    }
+}
+
+
