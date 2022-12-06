@@ -1,0 +1,53 @@
+.subscribe {
+    margin-top: 20rem;
+    margin-bottom: 5rem;
+    &__container {
+        @include flex(flex-start, space-between);
+        padding-bottom: 8rem;
+        border-bottom: 4px solid currentColor;
+    }
+
+    &__title,
+    &__info {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        max-width: 43rem;
+    }
+
+    &__form {
+        background-color: rgb(242, 241, 246);
+        @include flex(center, space-between);
+        padding: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__input,
+    &__button {
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.4rem;
+        font-family: "Poppins";
+        color: $text-color;
+        padding: 0;
+    }
+
+    &__input {
+        flex-grow: 1;
+        padding-right: 1.5rem;
+    }
+
+    &__button {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    &__social i {
+        margin-left: 4rem;
+        font-size: 2rem;
+    }
+}

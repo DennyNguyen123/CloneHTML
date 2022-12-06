@@ -33,6 +33,7 @@ a {
 ul,
 li {
   list-style: none;
+  padding-inline-start: unset;
 }
 
 .wrapper {
@@ -895,4 +896,86 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.connect {
+  margin-top: 20rem;
+  text-align: center;
+}
+.connect__title {
+  font-weight: bold;
+  margin-bottom: 3.5rem;
+  font-size: 2.5rem;
+}
+.connect__notice {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 6rem;
+}
+.connect__notice span {
+  color: rgb(255, 206, 137);
+}
+.connect__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.connect__image {
+  object-fit: cover;
+}
+.connect__item {
+  width: calc(25% - 22.5px);
+}
+
+.subscribe {
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+}
+.subscribe__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  padding-bottom: 8rem;
+  border-bottom: 4px solid currentColor;
+}
+.subscribe__title, .subscribe__info {
+  width: 50%;
+}
+.subscribe__title {
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 43rem;
+}
+.subscribe__form {
+  background-color: rgb(242, 241, 246);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  padding: 2rem;
+  margin-bottom: 3.5rem;
+}
+.subscribe__input, .subscribe__button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-family: "Poppins";
+  color: rgb(26, 43, 95);
+  padding: 0;
+}
+.subscribe__input {
+  flex-grow: 1;
+  padding-right: 1.5rem;
+}
+.subscribe__button {
+  font-weight: bold;
+  cursor: pointer;
+}
+.subscribe__social i {
+  margin-left: 4rem;
+  font-size: 2rem;
 }
