@@ -13,7 +13,6 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 20rem;
 }
 
 a,
@@ -70,6 +69,15 @@ li {
 }
 .btn--primary.has-shadow {
   box-shadow: 0 10px 35px -5px rgb(255, 206, 137);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgb(26, 43, 95);
+}
+.logo__text {
+  color: rgb(255, 206, 137);
 }
 
 .text-clamp, .text-clamp--2 {
@@ -381,15 +389,6 @@ li {
   -moz-border-radius: 2.5rem;
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
-}
-
-.logo {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: rgb(26, 43, 95);
-}
-.logo__text {
-  color: rgb(255, 206, 137);
 }
 
 .mt-1 {
@@ -929,7 +928,6 @@ li {
 
 .subscribe {
   margin-top: 20rem;
-  margin-bottom: 5rem;
 }
 .subscribe__container {
   display: flex;
@@ -978,4 +976,25 @@ li {
 .subscribe__social i {
   margin-left: 4rem;
   font-size: 2rem;
+}
+
+.footer {
+  margin-top: 5rem;
+}
+.footer__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+.footer__item {
+  width: 25%;
+}
+.footer__link {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  width: fit-content;
 }

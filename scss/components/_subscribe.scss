@@ -1,6 +1,5 @@
 .subscribe {
     margin-top: 20rem;
-    margin-bottom: 5rem;
     &__container {
         @include flex(flex-start, space-between);
         padding-bottom: 8rem;
