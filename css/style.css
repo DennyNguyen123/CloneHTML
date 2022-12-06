@@ -879,3 +879,20 @@ li {
   width: calc(50% - 3rem);
   margin-bottom: 5rem;
 }
+
+.partner__container {
+  max-width: 83rem;
+  text-align: center;
+}
+.partner__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+  padding-bottom: 7rem;
+  border-bottom: 1px solid currentColor;
+}
+.partner__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
